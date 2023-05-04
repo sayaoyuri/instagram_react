@@ -1,21 +1,28 @@
 import Post from "./Post";
 
 export default function Posts () {
-  const postList = [];
+  const postList = [
+    {
+      userPhoto: './assets/images/bad.vibes.memes.svg',
+      userName: 'sayaoyuri',
+      image: './assets/images/gato-telefone.svg'
+    },
+    {
+      userPhoto: './assets/images/meowed.svg',
+      userName: 'sayaoyuri',
+      image: './assets/images/gato-telefone.svg'
+    },
+    {
+      userPhoto: './assets/images/9gag.svg',
+      userName: 'sayaoyuri',
+      image: './assets/images/dog.svg'
+    }
+  ];
   
-  
-  function createPost(userPhoto, userName, image) {
-    postList.push(<Post userPhoto={userPhoto} userName={userName} image={image}/>)
-  }
-
-  createPost('./assets/images/gato-telefone.svg', 'sayaoyuri', './assets/images/gato-telefone.svg');
-  createPost('./assets/images/dog.svg' , 'sayaoyuri', './assets/images/dog.svg');
-  createPost('./assets/images/dog.svg' , 'sayaoyuri', './assets/images/dog.svg');
-
   return (
     <section class="posts-wrapper">
       <ul>
-        {postList.map((post) => <li>{post}</li>)}
+        {postList.map(post => <Post userPhoto={post.userPhoto} userName={post.userName} image={post.image} />)}
       </ul>
     </section>
   );

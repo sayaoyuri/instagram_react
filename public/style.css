@@ -216,6 +216,9 @@ main {
   gap: 18px;
   background-color: #ffffff;
 }
+.sidebar header img {
+  border-radius: 50%;
+}
 
 .user {
   display: flex;
