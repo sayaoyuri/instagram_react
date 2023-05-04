@@ -42,17 +42,17 @@ export default function Post (post) {
       </header>
         <img src={post.image} onDoubleClick={likePostDBClick} data-test="post-image" alt="" />
         <div class="interactions">
-        <div>
-        <ion-icon name={likeBtn} onClick={likePost} data-test="like-post"></ion-icon>
-        <ion-icon name="chatbubble-outline"></ion-icon>
-          <ion-icon name="paper-plane-outline"></ion-icon>
+          <div>
+            <ion-icon name={likeBtn} onClick={likePost} data-test="like-post"></ion-icon>
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
-        <ion-icon name={bookmarked} onClick={savePost} data-test="save-post"></ion-icon>
+          <ion-icon name={bookmarked} onClick={savePost} data-test="save-post"></ion-icon>
         </div>
         <div class="likes">
           <img src="./assets/images/9gag.svg" alt=""/>
           <div>
-            Curtido por <span>fulano</span> e <span>outras <span data-test="likes=number">{likes}</span>  pessoas</span>
+            Curtido por <span>fulano</span> e <span>outras <span data-test="likes-number">{likes}</span>  pessoas</span>
           </div>
         </div>
       </div>
