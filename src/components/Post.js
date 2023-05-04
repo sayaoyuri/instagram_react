@@ -23,7 +23,7 @@ export default function Post (post) {
   }
 
   return (
-    <div class="post">
+    <div class="post" data-test="post">
       <header>
         <div>
           <img src={post.userPhoto} alt="" />
@@ -31,14 +31,14 @@ export default function Post (post) {
           </div>
         <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
       </header>
-        <img src={post.image} onDoubleClick={likePostDBClick} alt="" />
+        <img src={post.image} onDoubleClick={likePostDBClick} data-test="post-image" alt="" />
         <div class="interactions">
         <div>
-        <ion-icon name={like} onClick={likePost}></ion-icon>
+        <ion-icon name={like} onClick={likePost} data-test="like-post"></ion-icon>
         <ion-icon name="chatbubble-outline"></ion-icon>
           <ion-icon name="paper-plane-outline"></ion-icon>
           </div>
-        <ion-icon name={bookmarked} onClick={savePost}></ion-icon>
+        <ion-icon name={bookmarked} onClick={savePost} data-test="save-post"></ion-icon>
         </div>
       </div>
   );
