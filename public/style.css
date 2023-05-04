@@ -173,6 +173,23 @@ main {
   color: #ff0000;
 }
 
+.likes {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 13px;
+  font-weight: 300;
+}
+
+.likes img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.likes span {
+  font-weight: 500;
+}
+
 .interactions {
   display: flex;
   flex-direction: row;
