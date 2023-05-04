@@ -169,6 +169,10 @@ main {
   width: 100%;
 }
 
+.post ion-icon[name='heart'] {
+  color: #ff0000;
+}
+
 .interactions {
   display: flex;
   flex-direction: row;
