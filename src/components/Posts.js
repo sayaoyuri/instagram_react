@@ -1,60 +1,22 @@
+import Post from "./Post";
+
 export default function Posts () {
+  const postList = [];
+  
+  
+  function createPost(userPhoto, userName, image) {
+    postList.push(<Post userPhoto={userPhoto} userName={userName} image={image}/>)
+  }
+
+  createPost('./assets/images/gato-telefone.svg', 'sayaoyuri', './assets/images/gato-telefone.svg');
+  createPost('./assets/images/dog.svg' , 'sayaoyuri', './assets/images/dog.svg');
+  createPost('./assets/images/dog.svg' , 'sayaoyuri', './assets/images/dog.svg');
+
   return (
     <section class="posts-wrapper">
-      <div class="post">
-        <header>
-          <div>
-            <img src="./assets/images/9gag.svg" alt="" />
-            <h1>sayaoyuri</h1>
-          </div>
-          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-        </header>
-        <img src="./assets/images/gato-telefone.svg" alt="" />
-        <div class="interactions">
-          <div>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="chatbubble-outline"></ion-icon>
-            <ion-icon name="paper-plane-outline"></ion-icon>
-          </div>
-          <ion-icon name="bookmark-outline"></ion-icon>
-        </div>
-      </div>
-      <div class="post">
-        <header>
-          <div>
-            <img src="./assets/images/9gag.svg" alt="" />
-            <h1>sayaoyuri</h1>
-          </div>
-          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-        </header>
-        <img src="./assets/images/gato-telefone.svg" alt="" />
-        <div class="interactions">
-          <div>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="chatbubble-outline"></ion-icon>
-            <ion-icon name="paper-plane-outline"></ion-icon>
-          </div>
-          <ion-icon name="bookmark-outline"></ion-icon>
-        </div>
-      </div>
-      <div class="post">
-        <header>
-          <div>
-            <img src="./assets/images/9gag.svg" alt="" />
-            <h1>sayaoyuri</h1>
-          </div>
-          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-        </header>
-        <img src="./assets/images/gato-telefone.svg" alt="" />
-        <div class="interactions">
-          <div>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="chatbubble-outline"></ion-icon>
-            <ion-icon name="paper-plane-outline"></ion-icon>
-          </div>
-          <ion-icon name="bookmark-outline"></ion-icon>
-        </div>
-      </div>
+      <ul>
+        {postList.map((post) => <li>{post}</li>)}
+      </ul>
     </section>
   );
 }

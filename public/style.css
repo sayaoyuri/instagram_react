@@ -224,7 +224,13 @@ main {
   justify-content: space-between;
 }
 
+.suggestions-wrapper ul {
+  width: 100%;
+}
+
 .suggestion {
+  display: flex;
+  justify-content: space-between;
   margin: 17px 0px;
   align-items: center;
 }
