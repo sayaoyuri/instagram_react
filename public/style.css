@@ -93,7 +93,7 @@ main {
   display: none;
 }
 
-.stories {
+.story {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -101,13 +101,13 @@ main {
   gap: 2px;
 }
 
-.stories :first-child {
+.story :first-child {
   width: 66px;
   height: 66px;
   border-radius: 28px;
 }
 
-.stories :nth-child(2) {
+.story :nth-child(2) {
   position: absolute;
   top: 4.5px;
   left: 6px;
@@ -196,6 +196,16 @@ main {
   background-color: #ffffff;
 }
 
+.user {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.user ion-icon {
+  font-size: 20px;
+}
+
 .sidebar header img {
   width: 56px;
   height: 56px;
@@ -204,11 +214,11 @@ main {
 
 .sidebar h1 {
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .sidebar p {
-  font-size: 14px;
+  font-size: 12px;
   color: #8e8e8e;
   font-weight: 300;
 }
@@ -216,7 +226,7 @@ main {
 .sidebar h3 {
   color: #8e8e8e;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .sidebar > div {
@@ -237,6 +247,7 @@ main {
 
 .suggestion h1 {
   font-weight: 500;
+  margin-bottom: 4px;
 }
 
 .suggestion p {
