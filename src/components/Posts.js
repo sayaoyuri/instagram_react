@@ -20,7 +20,7 @@ export default function Posts () {
   ];
   
   return (
-    <section class="posts-wrapper">
+    <section className="posts-wrapper">
       <ul>
         {postList.map(post => <Post userPhoto={post.userPhoto} userName={post.userName} image={post.image} />)}
       </ul>

@@ -1,6 +1,6 @@
 export default function Story(story) {
   return (
-    <div class="story">
+    <div className="story">
       <img
         src="./assets/images/stories_background.jpg"
         alt="Storie background"

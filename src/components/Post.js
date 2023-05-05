@@ -31,7 +31,7 @@ export default function Post (post) {
   }
 
   return (
-    <div class="post" data-test="post">
+    <div className="post" data-test="post">
       <header>
         <div>
           <img src={post.userPhoto} alt="" />
@@ -40,7 +40,7 @@ export default function Post (post) {
         <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
       </header>
         <img src={post.image} onDoubleClick={likePostDBClick} data-test="post-image" alt="" />
-        <div class="interactions">
+        <div className="interactions">
           <div>
             <ion-icon name={likeBtn} onClick={likePost} data-test="like-post"></ion-icon>
             <ion-icon name="chatbubble-outline"></ion-icon>
@@ -48,7 +48,7 @@ export default function Post (post) {
           </div>
           <ion-icon name={bookmarked} onClick={savePost} data-test="save-post"></ion-icon>
         </div>
-        <div class="likes">
+        <div className="likes">
           <img src="./assets/images/9gag.svg" alt=""/>
           <div>
             Curtido por <span>fulano</span> e <span>outras <span data-test="likes-number">{likes}</span>  pessoas</span>
@@ -57,45 +57,3 @@ export default function Post (post) {
       </div>
   );
 }
-//   Entendendo quais sao os tipos de dados e como eles funcionam
-//   Entendendo tipagem de dados em typescript
-// }
-
-// Manipulacao de dados {
-//   Como realizar operacoes
-//   Como manipular, ordenar e filtrar lista de dados (map, sort, filter)
-// }
-
-// Funcoes assincronas {
-//   Entendendo promise e observables
-//   Como trabalhar com retorno de dados assincronos
-
-//   Padrao de API rest {
-//     Formato de dados em JSON
-//     Enviando requests para uma API, tratando a response de retorno 
-//   }
-// }
-
-// Instalacao/entendimento de ferramentes necessarias para o desenvolver {
-//     Node - Ferramente para desenvolvimento em Java/Type script no backend
-//     nvm - Gerenciador de versao Node
-//     npm - Gerenciador de pacotes
-  
-//     Typescript
-
-//     Angular - Ferramenta/framework para desenvolvimento de interfaces / frontend {
-//       Estrutura de um projeto
-//       Dependencias
-//       Rotas - Navegacao entre paginas
-//     }
-
-//     git /github {
-//       Criacao de repositorio github
-//       Comandos (clone, commit, push)
-//       Trabalhando em equipe / Branchs diferentes
-//     }
-
-//     API/Node/Backend {
-//       Estrutura de projeto de uma API em Node
-//     }
-// } 

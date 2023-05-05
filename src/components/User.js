@@ -21,7 +21,7 @@ export default function User() {
   return (
     <header>
       <img  src={userPhoto} onClick={changeUserPhoto} data-test="profile-image" alt="" />
-      <div class="user">
+      <div className="user">
         <h1 data-test="name">{userName}</h1>
         <ion-icon name="pencil-outline" onClick={changeUserName} data-test="edit-name"></ion-icon>
       </div>

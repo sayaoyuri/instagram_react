@@ -5,7 +5,7 @@ import BottomNav from "./BottomNav";
 
 export default function Body () {
   return (
-    <div class="main-wrapper">
+    <div className="main-wrapper">
       <main>
         <Stories/>
         <Posts/>

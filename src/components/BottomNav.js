@@ -1,6 +1,6 @@
 export default function BottomNav() {
   return (
-    <div class="bottom-nav">
+    <div className="bottom-nav">
       <ion-icon name="home"></ion-icon>
       <ion-icon name="search-outline"></ion-icon>
       <ion-icon name="add-circle-outline"></ion-icon>

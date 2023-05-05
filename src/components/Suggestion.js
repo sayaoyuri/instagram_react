@@ -1,6 +1,6 @@
 export default function Suggestion(suggestion) {
   return (
-    <div class="suggestion">
+    <div className="suggestion">
       <div>
         <img src={suggestion.userPhoto} alt="" />
         <div>
@@ -8,7 +8,7 @@ export default function Suggestion(suggestion) {
           <p>Segue você</p>
         </div>
       </div>
-      <p class="follow">Seguir</p>
+      <p className="follow">Seguir</p>
     </div>
   );
 }

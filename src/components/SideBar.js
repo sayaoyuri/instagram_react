@@ -3,7 +3,7 @@ import Suggestions from "./Suggestions";
 
 export default function SideBar () {
   return (
-    <section class="sidebar">
+    <section className="sidebar">
       <User/>
         <div>
           <h3>Sugestões para você</h3>
