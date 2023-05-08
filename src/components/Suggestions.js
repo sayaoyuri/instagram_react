@@ -23,7 +23,7 @@ export default function Suggestions() {
   return (
     <div className="suggestions-wrapper">
       <ul>
-        {suggestionList.map(suggestion => <Suggestion userPhoto={suggestion.userPhoto} userName={suggestion.userName}/>)}
+        {suggestionList.map((suggestion, index) => <Suggestion key={index} userPhoto={suggestion.userPhoto} userName={suggestion.userName}/>)}
       </ul>
     </div>
   );

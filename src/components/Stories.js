@@ -39,7 +39,7 @@ export default function Stories () {
   return (
     <section>
       <ul className="stories-wrapper">
-        {storyList.map(story => <Story img={story.img} user={story.user}/>)}
+        {storyList.map((story, index) => <Story key={index} img={story.img} user={story.user}/>)}
       <ion-icon name="chevron-forward-circle"></ion-icon>
       </ul>
     </section>

@@ -22,7 +22,7 @@ export default function Posts () {
   return (
     <section className="posts-wrapper">
       <ul>
-        {postList.map(post => <Post userPhoto={post.userPhoto} userName={post.userName} image={post.image} />)}
+        {postList.map((post, index) => <Post key={index} userPhoto={post.userPhoto} userName={post.userName} image={post.image} />)}
       </ul>
     </section>
   );
